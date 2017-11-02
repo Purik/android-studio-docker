@@ -1,4 +1,4 @@
-# Docker image with GUI with preinstalled Android Studio 3.0
+# Android Studio 3.0 preinstalled in Docker image with GUI support
 
 [![N|Solid](https://www.docker.com/sites/default/files/vertical_large.png)](https://hub.docker.com/r/purik/android-studio/)
 
