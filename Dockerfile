@@ -1,5 +1,4 @@
-LABEL maintainer="SvenDowideit@home.org.au"
-LABEL email="minikspb@gmail.com"
+LABEL maintainer="minikspb@gmail.com"
 
 FROM ubuntu:17.04
 
