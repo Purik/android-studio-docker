@@ -14,6 +14,6 @@ I have CI server with installed docker engine for running containers for separat
 You have to run Android Studio as GUI application when it is necessity to install new build tools, new SDK version, etc. I have spent much time for proxying X11 protocol stream from docker container through host machine to my local XWindow server, running on my home laptop. 
 
 ### My environment: Windows OS + XMing as X11 server application. 
-- Establish ssh connect to my CI server with x11 forwarding. I typically use Putty with option Connection/SSH/X11/"Enable X11 forwarding" checkbox checked on.
-- Run container by calling ```run.sh```
+- Establish ssh connection to my CI server with x11 forwarding. I typically use Putty with option Connection/SSH/X11/"Enable X11 forwarding" checkbox checked on.
+- Run container by calling ```run.sh``` (you can find this script beside Dockerfile in repo)
 - Enjoy 
