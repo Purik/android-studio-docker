@@ -8,4 +8,12 @@ Typical usage:
   - Customize container with studio for any specific project by installing necessary build tools, accepting licenses agreements, etc  throug GUI by X11 that preinstalled in base image
   - Use customized container as image for your personal configurations by ```docker commit```
   
- 
+### Probability work process (I use this one)
+I have CI server with installed docker engine for running containers for separate builders with diffirent configurations. It is comfortable for me localize dependencies inside container, resolving much problems as libraries dependencies, current software configurations for specific build runners, moreover, docker based approach allow me follow modern concept "Infrastructure as application", so different infrastructure configurations have becamed separate projects inside my code. 
+  
+You have to run Android Studio as GUI application when it is necessity to install new build tools, new SDK version, etc. I have spent much time for proxying X11 protocol stream from docker container through host machine to my local XWindow server, running on my home laptop. 
+
+### My environment: Windows OS + XMing as X11 server application. 
+- Establish ssh connect to my CI server with x11 forwarding. I typically use Putty with option Connection/SSH/X11/"Enable X11 forwarding" checkbox checked on.
+- Run container by calling ```run.sh```
+- Enjoy 
