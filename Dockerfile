@@ -1,6 +1,5 @@
-LABEL maintainer="minikspb@gmail.com"
-
 FROM ubuntu:17.04
+LABEL maintainer="minikspb@gmail.com"
 
 RUN dpkg --add-architecture i386
 RUN apt-get update
