@@ -1,4 +1,4 @@
-FROM ubuntu:17.04
+FROM ubuntu:17.10
 LABEL maintainer="minikspb@gmail.com"
 
 RUN dpkg --add-architecture i386
