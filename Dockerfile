@@ -10,6 +10,7 @@ RUN apt-get install -y curl unzip
 RUN curl 'https://uit.fun/repo/android-studio-ide-183.5522156-linux.zip' > /tmp/studio.zip && unzip -d /opt /tmp/studio.zip && rm /tmp/studio.zip
 
 # Install X11
+ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get install -y xorg
 
 
