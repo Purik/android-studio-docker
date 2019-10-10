@@ -22,7 +22,7 @@ RUN apt-get install -y default-jdk
 
 # Install prerequisites
 RUN apt-get install -y libz1 libncurses5 libbz2-1.0:i386 libstdc++6 libbz2-1.0 lib32stdc++6 lib32z1 
-RUN apt-get install usbutils android-tools-adb
+RUN apt-get install -y usbutils android-tools-adb
 
 # Clean up
 RUN apt-get clean
