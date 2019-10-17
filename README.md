@@ -24,4 +24,4 @@ If you wish prepare Docker image once and reuse it multiple times later, follow 
  - Run container by calling ```run.sh``` (you can find this script beside Dockerfile in repo)
  - Close docker container
  - Run ```docker ps -a``` to detect stopped android-studio docker container, for exampple you have detected container has id ```xxx```
- - Build image from stopped container as described [here](https://docs.docker.com/engine/reference/commandline/commit/)
+ - Build image from stopped container as described [here](https://docs.docker.com/engine/reference/commandline/commit/), example: ```docker commit xxx my_studio_image_name``` 
