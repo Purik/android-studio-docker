@@ -17,3 +17,11 @@ You have to run Android Studio as GUI application when it is necessity to instal
 - Establish ssh connection to my CI server with x11 forwarding. I typically use Putty with option Connection/SSH/X11/"Enable X11 forwarding" checkbox checked on.
 - Run container by calling ```run.sh``` (you can find this script beside Dockerfile in repo)
 - Enjoy 
+
+### Persist data and volumes
+If you wish prepare Docker image once and reuse it multiple times later, follow next steps:
+ - Establish ssh connection to my CI server with x11 forwarding. I typically use Putty with option Connection/SSH/X11/"Enable X11 forwarding" checkbox checked on.
+ - Run container by calling ```run.sh``` (you can find this script beside Dockerfile in repo)
+ - Close docker container
+ - Run ```docker ps -a``` to detect stopped android-studio docker container, for exampple you have detected container has id ```xxx```
+ - Build image from stopped container as described here (https://docs.docker.com/engine/reference/commandline/commit/)
