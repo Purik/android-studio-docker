@@ -7,7 +7,8 @@ RUN apt-get update
 # Download specific Android Studio bundle (all packages).
 RUN apt-get install -y curl unzip
 
-RUN curl 'https://uit.fun/repo/android-studio-ide-183.5522156-linux.zip' > /tmp/studio.zip && unzip -d /opt /tmp/studio.zip && rm /tmp/studio.zip
+RUN curl 'https://uit.fun/repo/android-studio-ide-3.6.3-linux.tar.gz' > /studio.tar.gz && \
+  tar -zxvf studio.tar.gz && rm /studio.tar.gz
 
 # Install X11
 ENV DEBIAN_FRONTEND=noninteractive
